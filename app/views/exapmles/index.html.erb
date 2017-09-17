@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Exapmles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @exapmles.each do |exapmle| %>
+      <tr>
+        <td><%= exapmle.name %></td>
+        <td><%= exapmle.title %></td>
+        <td><%= exapmle.message %></td>
+        <td><%= link_to 'Show', exapmle %></td>
+        <td><%= link_to 'Edit', edit_exapmle_path(exapmle) %></td>
+        <td><%= link_to 'Destroy', exapmle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Exapmle', new_exapmle_path %>

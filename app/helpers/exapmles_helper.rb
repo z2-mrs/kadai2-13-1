@@ -1,0 +1,2 @@
+module ExapmlesHelper
+end

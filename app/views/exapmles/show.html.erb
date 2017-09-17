@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @exapmle.name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @exapmle.title %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @exapmle.message %>
+</p>
+
+<%= link_to 'Edit', edit_exapmle_path(@exapmle) %> |
+<%= link_to 'Back', exapmles_path %>
